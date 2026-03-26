@@ -15,4 +15,8 @@ Bu repo sadece HTML kullanılarak hazırlanmış basit bir komik içerikler web 
 
 Site yayınlandıktan sonra link buraya eklenmelidir:
 
-https://veyse1.github.io/Web-Project-3/
+`BURAYA_YAYIN_LINKI_EKLENECEK`
+
+## Not
+
+Kayıt ve giriş sayfaları sadece görüntü amaçlıdır. Formlarda HTML doğrulama özellikleri kullanılmıştır.

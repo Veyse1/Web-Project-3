@@ -4,77 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gülümseten Köşe - Giriş Yap</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <div>
-            <p><strong>Logo:</strong> :)</p>
-            <h1>Gülümseten Köşe</h1>
-            <p>Giriş sayfası</p>
-        </div>
-        <nav>
-            <a href="index.html">Ana Sayfa</a> |
-            <a href="resimler.html">Komik Resimler</a> |
-            <a href="videolar.html">Videolar</a> |
-            <a href="yazilar.html">Komik Yazılar</a> |
-            <a href="kayit.html">Kayıt Ol</a> |
-            <a href="giris.htm">Giriş Yap</a>
-        </nav>
-        <hr>
-    </header>
+<body class="page-login">
+    <div class="page-shell">
+        <header class="site-header">
+            <div class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow"><strong>Logo:</strong> :)</p>
+                    <h1>Gülümseten Köşe</h1>
+                    <p class="hero-text">Giriş sayfası</p>
+                </div>
+            </div>
 
-    <main>
-        <section>
-            <h2>Siteye Giriş Formu</h2>
-            <p>Bu sayfa sadece görüntü amaçlıdır. Giriş formu HTML özellikleri ile doğrulanmaktadır.</p>
-        </section>
+            <nav class="site-nav" aria-label="Ana menü">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="resimler.html">Komik Resimler</a>
+                <a href="videolar.html">Videolar</a>
+                <a href="yazilar.html">Komik Yazılar</a>
+                <a href="kayit.html">Kayıt Ol</a>
+                <a href="giris.htm" aria-current="page">Giriş Yap</a>
+            </nav>
+        </header>
 
-        <section>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Giriş Bilgileri</legend>
+        <main class="page-content">
+            <section class="section">
+                <div class="intro-copy">
+                    <h2>Siteye Giriş Formu</h2>
+                    <p>Bu sayfa sadece görüntü amaçlıdır. Giriş formu HTML özellikleri ile doğrulanmaktadır.</p>
+                </div>
+            </section>
 
-                    <div>
-                        <label for="giriseposta">E-posta:</label><br>
-                        <input type="email" id="giriseposta" name="giriseposta" required placeholder="ornek@mail.com">
-                    </div>
-                    <br>
+            <section class="section">
+                <div class="form-shell">
+                    <form action="#" method="post" class="site-form">
+                        <fieldset>
+                            <legend>Giriş Bilgileri</legend>
 
-                    <div>
-                        <label for="girissifre">Şifre:</label><br>
-                        <input type="password" id="girissifre" name="girissifre" required minlength="6" maxlength="20">
-                    </div>
-                    <br>
+                            <div class="form-grid">
+                                <div class="form-row">
+                                    <label for="giriseposta">E-posta:</label>
+                                    <input type="email" id="giriseposta" name="giriseposta" required placeholder="ornek@mail.com">
+                                </div>
 
-                    <div>
-                        <label for="uyegiris">Giriş Türü:</label><br>
-                        <select id="uyegiris" name="uyegiris" required>
-                            <option value="">Seçiniz</option>
-                            <option value="normal">Normal Üye</option>
-                            <option value="editor">Editor</option>
-                            <option value="misafir">Misafir</option>
-                        </select>
-                    </div>
-                    <br>
+                                <div class="form-row">
+                                    <label for="girissifre">Şifre:</label>
+                                    <input type="password" id="girissifre" name="girissifre" required minlength="6" maxlength="20">
+                                </div>
 
-                    <div>
-                        <input type="checkbox" id="hatirla" name="hatirla">
-                        <label for="hatirla">Beni hatırla</label>
-                    </div>
-                    <br>
+                                <div class="form-row">
+                                    <label for="uyegiris">Giriş Türü:</label>
+                                    <select id="uyegiris" name="uyegiris" required>
+                                        <option value="">Seçiniz</option>
+                                        <option value="normal">Normal Üye</option>
+                                        <option value="editor">Editor</option>
+                                        <option value="misafir">Misafir</option>
+                                    </select>
+                                </div>
 
-                    <div>
-                        <input type="submit" value="Giriş Yap">
-                        <input type="reset" value="Temizle">
-                    </div>
-                </fieldset>
-            </form>
-        </section>
-    </main>
+                                <label class="toggle-row" for="hatirla">
+                                    <input type="checkbox" id="hatirla" name="hatirla">
+                                    <span>Beni hatırla</span>
+                                </label>
 
-    <footer>
-        <hr>
-        <p>Gülümseten Köşe | Giriş Sayfası</p>
-    </footer>
+                                <div class="form-actions">
+                                    <input type="submit" value="Giriş Yap">
+                                    <input type="reset" value="Temizle">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Gülümseten Köşe | Giriş Sayfası</p>
+        </footer>
+    </div>
 </body>
 </html>
