@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gülümseten Köşe - Kayıt Ol</title>
+</head>
+<body>
+    <header>
+        <div>
+            <p><strong>Logo:</strong> :)</p>
+            <h1>Gülümseten Köşe</h1>
+            <p>Kayıt sayfası</p>
+        </div>
+        <nav>
+            <a href="index.html">Ana Sayfa</a> |
+            <a href="resimler.html">Komik Resimler</a> |
+            <a href="videolar.html">Videolar</a> |
+            <a href="yazilar.html">Komik Yazılar</a> |
+            <a href="kayit.html">Kayıt Ol</a> |
+            <a href="giris.htm">Giriş Yap</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Siteye Kayıt Formu</h2>
+            <p>Bu sayfa sadece görüntü amaçlıdır. Form alanlarında HTML doğrulama özellikleri kullanılmıştır.</p>
+        </section>
+
+        <section>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Kullanıcı Bilgileri</legend>
+
+                    <div>
+                        <label for="adsoyad">Ad Soyad:</label><br>
+                        <input type="text" id="adsoyad" name="adsoyad" required minlength="3" maxlength="40" placeholder="Adınızı ve soyadınızı yazınız">
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="kullaniciadi">Kullanıcı Adı:</label><br>
+                        <input type="text" id="kullaniciadi" name="kullaniciadi" required minlength="4" maxlength="20" pattern="[A-Za-z0-9]+">
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="eposta">E-posta:</label><br>
+                        <input type="email" id="eposta" name="eposta" required placeholder="ornek@mail.com">
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="sifre">Şifre:</label><br>
+                        <input type="password" id="sifre" name="sifre" required minlength="6" maxlength="20">
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="tel">Telefon:</label><br>
+                        <input type="tel" id="tel" name="tel" required pattern="[0-9]{10,11}" placeholder="5xxxxxxxxx">
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="dogumtarihi">Doğum Tarihi:</label><br>
+                        <input type="date" id="dogumtarihi" name="dogumtarihi" required>
+                    </div>
+                    <br>
+
+                    <div>
+                        <p>Favori İçerik Türü:</p>
+                        <input type="radio" id="resimsec" name="favori" value="resim" required>
+                        <label for="resimsec">Komik Resimler</label><br>
+                        <input type="radio" id="videosec" name="favori" value="video">
+                        <label for="videosec">Videolar</label><br>
+                        <input type="radio" id="yazisec" name="favori" value="yazi">
+                        <label for="yazisec">Komik Yazılar</label>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="bolum">Bölüm:</label><br>
+                        <select id="bolum" name="bolum" required>
+                            <option value="">Seçiniz</option>
+                            <option value="bilgisayar">Bilgisayar Mühendisliği</option>
+                            <option value="yazilim">Yazılım Mühendisliği</option>
+                            <option value="elektrik">Elektrik Elektronik</option>
+                            <option value="diger">Diğer</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="mesaj">Kendinizden Kısaca Bahsedin:</label><br>
+                        <textarea id="mesaj" name="mesaj" rows="5" cols="40" minlength="10" maxlength="200" required></textarea>
+                    </div>
+                    <br>
+
+                    <div>
+                        <input type="checkbox" id="onay" name="onay" required>
+                        <label for="onay">Kullanım koşullarını okudum ve kabul ediyorum.</label>
+                    </div>
+                    <br>
+
+                    <div>
+                        <input type="submit" value="Kayıt Ol">
+                        <input type="reset" value="Temizle">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Gülümseten Köşe | Kayıt Sayfası</p>
+    </footer>
+</body>
+</html>
